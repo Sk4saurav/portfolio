@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-color: #1c202e;
+  }
+  
+  body {
+    background-color: #060709;
+    color: #f1f5f9;
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #060709;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #232736;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ff1e42;
+  }
+}
+
+/* Cyber hollow text stroke */
+.text-stroke-red {
+  -webkit-text-stroke: 1.5px rgba(255, 30, 66, 0.85);
+  color: transparent;
+  transition: all 0.3s ease;
+}
+
+.text-stroke-red:hover {
+  -webkit-text-stroke: 1.5px #ff1e42;
+  text-shadow: 0 0 25px rgba(255, 30, 66, 0.4);
+}
+
+.text-stroke-dim {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.15);
+  color: transparent;
+}
+
+/* Subtle grid overlay */
+.cyber-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
+.cyber-grid-dense {
+  background-size: 20px 20px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 30, 66, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 30, 66, 0.05) 1px, transparent 1px);
+}
+
+/* Red glow effects */
+.glow-red {
+  box-shadow: 0 0 25px -5px rgba(255, 30, 66, 0.35);
+}
+
+.glow-red-sm {
+  box-shadow: 0 0 15px -3px rgba(255, 30, 66, 0.25);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 20px -5px rgba(0, 240, 255, 0.3);
+}
+
+/* Scanline animation */
+.scanline-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.scanline-bg::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent 50%,
+    rgba(0, 0, 0, 0.25) 51%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+  z-index: 20;
+}
