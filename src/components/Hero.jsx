@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ArrowRight, Terminal, Shield, Cpu, Activity, Radio, CheckCircle, Crosshair } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 import { cyberAudio } from '../utils/audio';
+import profileImg from '../assets/profile.png';
 
 export default function Hero() {
   const { personal, metrics } = portfolioData;
@@ -105,7 +106,7 @@ export default function Hero() {
                 {/* Photo with high-contrast noir red overlay */}
                 <div className="relative w-full aspect-[4/5] rounded-lg overflow-hidden bg-black flex items-center justify-center">
                   <img
-                    src="/profile.png"
+                    src={profileImg}
                     alt="Saurav Kumar"
                     className="w-full h-full object-cover object-center filter grayscale contrast-125 brightness-95 group-hover:scale-105 transition-transform duration-500"
                   />

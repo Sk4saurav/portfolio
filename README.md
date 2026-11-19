@@ -6,6 +6,12 @@
   <strong>Offensive Security Researcher & Autonomous AI Systems Architect</strong>
 </p>
 
+<p align="center">
+  <a href="https://sk4saurav.github.io/portfolio/">
+    <img src="public/profile.png" width="180" height="180" alt="Saurav Kumar" style="border-radius: 50%; border: 3px solid #FF1E42; object-fit: cover;" />
+  </a>
+</p>
+
 [![Launch Live Portfolio](https://img.shields.io/badge/LAUNCH%20PORTFOLIO-sk4saurav.github.io%2Fportfolio-FF1E42?style=for-the-badge&logo=googlechrome&logoColor=white)](https://sk4saurav.github.io/portfolio/)
 [![GitHub](https://img.shields.io/badge/GITHUB-Sk4saurav-12141c?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Sk4saurav)
 [![LinkedIn](https://img.shields.io/badge/LINKEDIN-Saurav%20Kumar-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/saurav-kumar-a62b63280/)
